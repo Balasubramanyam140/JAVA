@@ -1,0 +1,51 @@
+//Reverse a Number
+
+            import java.util.Scanner;
+            class Main{
+                public static void main(String [] args){
+                    Scanner sc = new Scanner(System.in);
+                    System.out.print("Enter a number : ");
+                    long n = sc.nextLong();
+                    long x = n;
+                    long y,z;
+                    long rev=0;
+                    System.out.println(x);
+                    while(x!=0){
+                        y= x%10;
+                        x = x/10;
+                        rev = rev*10+y;
+                    }
+                    System.out.println("Reverse Number : "+ rev);
+                }
+            }
+            
+/*
+OUTPUT : 
+          Enter a number : 341
+          341
+          Reverse Number : 143
+*/
+/*
+Iteration 1:
+number = 1234
+remainder = 1234 % 10 = 4
+reverse = 0 * 10 + 4 = 0 + 4 = 4
+number = 1234 / 10 = 123
+Now the value of the number and reverse variable is 123 and 4, respectively.
+Iteration 2:
+
+number = 123
+remainder = 123 % 10 = 3
+reverse = 4 * 10 + 3 = 40 + 3 = 43
+number = 123 / 10 = 12
+Now the value of the number and reverse variable is 12 and 43, respectively.
+
+Iteration 3:
+
+number = 12
+remainder = 12 % 10 = 2
+reverse = 43 * 10 + 2 = 430 + 2 = 432
+number = 12 / 10 = 1
+Now the value of the number and reverse variable is 1 and 432, respectively.
+
+*/
