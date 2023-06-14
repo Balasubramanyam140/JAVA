@@ -77,3 +77,33 @@ OUTPUT :
 Static methods can be called without creating objects
 Public methods must be called by creating objects
 */
+__________________________________________
+/*
+Access Methods With an Object
+Example
+Create a Car object named myCar. Call the fullThrottle() and speed() methods on the myCar object, and run the program:
+*/
+// Create a Main class
+public class Main {
+ 
+  // Create a fullThrottle() method
+  public void fullThrottle() {
+    System.out.println("The car is going as fast as it can!");
+  }
+
+  // Create a speed() method and add a parameter
+  public void speed(int maxSpeed) {
+    System.out.println("Max speed is: " + maxSpeed);
+  }
+
+  // Inside main, call the methods on the myCar object
+  public static void main(String[] args) {
+    Main myCar = new Main();   // Create a myCar object
+    myCar.fullThrottle();      // Call the fullThrottle() method
+    myCar.speed(200);          // Call the speed() method
+  }
+}
+/* OUTPUT :
+             The car is going as fast as it can!
+              Max speed is: 200
+*/
