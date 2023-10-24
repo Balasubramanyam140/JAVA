@@ -76,5 +76,51 @@ OUTPUT :
 */
 
 -----------------------------------------------------------------------------------------------
+QUE : Removing First element in LinkedList
+      1. Remove first element from list using removeFirst() method .
 
-      
+import java.util.LinkedList;
+
+public class Main{
+    public static void main(String[] args){
+        LinkedList<String> cars = new LinkedList<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        System.out.println("Actual LinkedList \n" + cars);
+        cars.removeFirst();
+        System.out.println("Removing  1st item in LinkedList \n" + cars);
+    }
+}
+/*
+OUTPUT
+            Actual LinkedList 
+            [Volvo, BMW, Ford]
+            Removing  1st item in LinkedList 
+            [BMW, Ford]
+*/
+----------------------------------------------------------------------------------------------
+QUE : Removing Last element from the LinkedList
+      1. Remove last element using removeLast() method .
+
+import java.util.LinkedList;
+
+public class Main{
+    public static void main(String[] args){
+        LinkedList<String> cars = new LinkedList<String>();
+        cars.add("Volvo");
+        cars.add("BMW");
+        cars.add("Ford");
+        System.out.println("Actual LinkedList \n" + cars);
+        cars.removeLast();
+        System.out.println("Removing  Last item in LinkedList \n" + cars);
+    }
+}
+
+/*
+OUTPUT :
+            Actual LinkedList 
+            [Volvo, BMW, Ford]
+            Removing  Last item in LinkedList 
+            [Volvo, BMW]
+*/
