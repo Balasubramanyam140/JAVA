@@ -191,12 +191,37 @@ OUTPUT:
 */
 ______________________________________________________________________________________________________________________________________________________________________________________
 QUE)
-
+           12345
+           1234
+           123
+           12
+           1
 SOL)
+import java.util.Scanner;
+import java.io.*;
+class Main{
+    public static void main(String[] args){
+        System.out.println("Enter a number");
+        Scanner sc = new Scanner(System.in);
+        int rows = sc.nextInt();
+        for(int i=rows ; i>0 ; i--){
+            for(int j=1 ; j<=i ; j++){
+                System.out.print(j);
+            }
+            System.out.println();
+        }
+    }
+}    
 /*
 INPUT:
-
+           Enter a number
+           5
 OUTPUT:
+           12345
+           1234
+           123
+           12
+           1
 
 */
 ______________________________________________________________________________________________________________________________________________________________________________________
