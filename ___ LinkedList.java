@@ -124,3 +124,47 @@ OUTPUT :
             Removing  Last item in LinkedList 
             [Volvo, BMW]
 */
+----------------------------------------------------------------------------------------------
+QUE : Get the 1st element
+      1. get the first element using getFist() method .
+
+
+import java.util.LinkedList;
+
+public class Main{
+    public static void main(String[] args){
+        LinkedList<String> family = new LinkedList<String>();
+        family.add("Venkataramana");
+        family.add("Siva Kumari");
+        family.add("Balasubramanyam");
+        family.add("Sai prasanna");
+        System.out.println(family.getFirst());
+    }
+}
+
+/*
+OUTPUT :
+               Venkataramana
+*/
+-----------------------------------------------------------------------------------------------
+QUE : Get the Last element 
+      1. Get the last element using getLast() method .
+
+import java.util.LinkedList;
+
+public class Main{
+    public static void main(String[] args){
+        LinkedList<String> family = new LinkedList<String>();
+        family.add("Venkataramana");
+        family.add("Siva Kumari");
+        family.add("Balasubramanyam");
+        family.add("Sai prasanna");
+        System.out.println(family.getLast());
+    }
+}
+
+/*
+OUTPUT :
+            Sai Prasanna
+*/
+----------------------------------------------------------------------------------------------
