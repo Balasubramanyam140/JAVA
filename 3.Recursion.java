@@ -1,3 +1,5 @@
+RECUSRION : if a method call itself multiple times is called recusrion
+
 public class Main {
 
   public static void main(String[] args) {
