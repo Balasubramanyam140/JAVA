@@ -1,3 +1,33 @@
+1) Sorting 
+    
+            class Main{
+                public static void main(String[] args){
+                    int[] arr = {1,8,9,3,5};
+                    int n = arr.length;
+                    for(int i=0;i<n-1;i++){
+                        int min =i;
+                        for(int j=i+1;j<n;j++){
+                            if(arr[j]<arr[min]){
+                                min = j;
+                            }
+                        }
+                        if(min != i){
+                        int temp = arr[min];
+                        arr[min] = arr[i];
+                        arr[i] = temp;
+                        }
+                    }
+                    for(int i :arr){
+                        System.out.print(i+" ");
+                    }
+                }
+            }
+
+OUTPUT :
+            1 3 5 8 9
+___________________________________________________________________________________________
+2) SortedArray using method
+    
 class Main{
     public static void main(String[] args){
         System.out.println("Unsoreted Array");
@@ -38,6 +68,8 @@ OUTPUT :
         Soreted Array
         1 2 4 5 8 9 10 
 _________________________________________________________________________________________
+3) Sorting Method Using Scanner
+    
 import java.util.Scanner;
 class Main{
     public static void main(String[] args){
