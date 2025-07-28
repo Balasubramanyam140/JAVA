@@ -1,9 +1,15 @@
 Que 1: Decimal to Binary
 Que 1: Binary to Decimal
 Que 2: Count of digits in an array
-Que 4: No of Perfect Squares in an Array
-
-
+Que 3: No of Perfect Squares in an Array
+QUE 4 :
+        INPUT :
+            5
+            3
+            3
+        OUTPUT:
+            5 15 45
+QUE 5:  Sum of Odd Number
 
 
 
@@ -64,12 +70,8 @@ Que 2: Count of digits in an array
                 return sum;
             }
         }
-------------------------------------------------------------------------
-------------------------------------------------------------------------
-------------------------------------------------------------------------
-------------------------------------------------------------------------
 ------------------------------------------------------------------------  
-Que 1: No of Perfect Squares in an Array
+Que 3: No of Perfect Squares in an Array
 
     import java.util.Scanner;
             public class Main {
@@ -95,3 +97,61 @@ Que 1: No of Perfect Squares in an Array
                     return sqrt*sqrt ==a;
                 }
         }
+
+------------------------------------------------------------------------
+QUE 4 :
+INPUT :
+    5
+    3
+    3
+OUTPUT:
+    5 15 45
+    
+                import java.util.Scanner;
+            class Main{
+                public static void main(String[] args){
+                    Scanner sc = new Scanner(System.in);
+                    int a = sc.nextInt();
+                    int b = sc.nextInt();
+                    int n = sc.nextInt();
+                    
+                    for(int i=0;i<n;i++){
+                        System.out.print(a+" ");
+                        a = a*b;
+                    }
+                }
+            }
+------------------------------------------------------------------------
+QUE 5:  Sum of Odd Numbers
+    public class Main {
+    public static void main(String[] args) {
+        int n = 5;  
+        int sum = 0;
+        
+        for (int i = 1, count = 0; count < n; i += 2) {
+            sum += i;
+            count++;
+        }
+        
+        System.out.println("Sum of first " + n + " odd numbers = " + sum);
+    }
+}
+
+                or
+                    
+    public class Main{
+        public static void main(String[] args){
+            int n =5;
+            System.out.println(n^2);
+        }
+    }
+
+        
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
