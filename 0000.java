@@ -18,6 +18,17 @@ Que 7: Transpose of Array elements
 Que 8 : Print even 1st and then odd
         input : 234532475
         output:242435375
+Que 9 : Most freq number in a number
+         123452225
+         2
+
+Que 9 : Most occured number in an array
+        5
+        23 45 23 65 78
+
+        OUtput :
+        23
+                
 Que 11: Sum of smallest and largest in given range
 ------------------------------------------------------------------------
 Que 1: Decimal to Binary
@@ -235,7 +246,77 @@ Que 8 : Print even 1st and then odd
             }
         }
 ------------------------------------------------------------------------
+Que 9 : Most freq number in a number
+         123452225
+         2
+
+        import java.util.Scanner;
+        class Main{
+            public static void main(String[] args){
+                Scanner sc = new Scanner(System.in);
+                long n = sc.nextLong();
+                
+                int[] count = new int[10];
+                while(n>0){
+                    int d = (int)(n%10);
+                    count[d]++;
+                    n=n/10;
+                }
+                int max =0;
+                int place = 0;
+                for(int i=0;i<10;i++){
+                    if(count[i]>0){
+                         System.out.println(i+ " = "+count[i]);
+                    }
+                    if(max < count[i]){
+                        place = i;
+                        max=count[i];
+                    }
+                }
+                System.out.println(place+" "+ max);
+            }
+        }
+
+------------------------------------------------------------------------
+Que 9 : Most occured number in an array
+        5
+        23 45 23 65 78
+
+        OUtput :
+        23
+
+
+import java.util.Scanner;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int [] arr = new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]= sc.nextInt();
+        }
+        int[] count =  new int[100];
+        for(int i=0;i< n;i++){
+            count[arr[i]]++;
+        }
+        int max =0;
+        int a = 0;
+        for(int i=0;i<count.length;i++){
+            if(count[i]>max){
+                a = i;
+                max = count[i];
+            }
+        }
         
+        for(int i=0;i<count.length;i++){
+            if(count[i] == max){
+                System.out.println(i+ " - "+ max);
+            }
+        }
+    }
+}
+
+------------------------------------------------------------------------
 Que 11: Sum of smallest and largest in given range
         import java.util.Scanner;
 class Main{
