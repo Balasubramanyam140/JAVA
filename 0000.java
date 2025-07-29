@@ -10,7 +10,10 @@ QUE 4 :
         OUTPUT:
             5 15 45
 QUE 5:  Sum of Odd Number
-        
+Que 6 : print missing characters from string
+        Programming
+        prgming
+        output : o m
 Que 7: Transpose of Array elements
 
 Que 11: Sum of smallest and largest in given range
@@ -149,6 +152,38 @@ QUE 5:  Sum of Odd Numbers
 
         
 ------------------------------------------------------------------------
+Que 6 : print missing characters from string
+        Programming
+        prgming
+        output : o m
+
+        import java.util.Scanner;
+        class Main{
+            public static void main(String[] args){
+                Scanner sc = new Scanner(System.in);
+                String a = sc.next();
+                String b = sc.next();
+                
+                char[] c = a.toCharArray();
+                char[] d = b.toCharArray();
+                
+                boolean[] visited = new boolean[d.length];
+                
+                for(int i=0;i<c.length;i++){
+                    boolean found = false;
+                    for(int j=0;j<d.length;j++){
+                        if(c[i] == d[j] && !visited[j]){
+                            visited[j] = true;
+                            found = true;
+                            break;
+                        }
+                    }
+                    if(!found){
+                        System.out.print(c[i]+" ");
+                    }
+                }
+            }
+}
 ------------------------------------------------------------------------
 Que 7: Transpose of Array elements
 
