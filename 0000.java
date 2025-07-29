@@ -15,7 +15,9 @@ Que 6 : print missing characters from string
         prgming
         output : o m
 Que 7: Transpose of Array elements
-
+Que 8 : Print even 1st and then odd
+        input : 234532475
+        output:242435375
 Que 11: Sum of smallest and largest in given range
 ------------------------------------------------------------------------
 Que 1: Decimal to Binary
@@ -208,6 +210,30 @@ Que 7: Transpose of Array elements
             }
         }
 ------------------------------------------------------------------------
+Que 8 : Print even 1st and then odd
+        input : 234532475
+        output:242435375
+
+        import java.util.Scanner;
+
+        class Main {
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                long n = sc.nextLong();
+                String even = "";
+                String odd = "";
+                while (n > 0) {
+                    long rem = n % 10;
+                    if (rem % 2 == 0) {
+                        even = even + rem;
+                    } else {
+                        odd = odd + rem;
+                    }
+                    n = n / 10;
+                }
+                System.out.println(even + odd);
+            }
+        }
 ------------------------------------------------------------------------
         
 Que 11: Sum of smallest and largest in given range
